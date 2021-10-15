@@ -1,0 +1,47 @@
+//Estilos, aplicar
+
+html {
+  @include gradient-bg($primary-color-light, $primary-color);
+}
+
+.navbar {
+  padding-right: $padding-x;
+  padding-left: $padding-y;
+  border: $border-radius;
+  @include gradient-bg(darken($primary-color-light, 5), $primary-color-dark);
+  &-toggle {
+    background-color: $primary-color-dark;
+  }
+  #nav {
+    @include navOculto;
+    #nav-home {
+      background-color: lighten($primary-color-dark, 1);
+      font-size: $font-size-lg;
+    }
+
+    #nav-btnBuscar {
+      background-color: lighten($primary-color-dark, 4);
+      font-size: $font-size-base;
+    }
+  }
+}
+#div {
+  @include gradient-bg($primary-color-light, $accent-color);
+  @include padding-xy(4, 4);
+  &-DeArriba {
+    @include gradient-bg($primary-color, $secondary-text-color);
+    font-family: "Montserrat";
+  }
+  &-DeAbajo {
+    @include gradient-bg($secondary-text-color, $accent-color);
+  }
+}
+ul {
+  @include gradient-bg($primary-color-light, $accent-color);
+}
+.card {
+  @include gradient-bg($primary-color-light, $accent-color);
+}
+footer {
+  @include gradient-bg(darken($primary-color-light, 5), $accent-color);
+}
