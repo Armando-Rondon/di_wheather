@@ -12,19 +12,24 @@ html {
   &-toggle {
     background-color: $primary-color-dark;
   }
-  #nav {
-    @include navOculto;
-    #nav-home {
-      background-color: lighten($primary-color-dark, 1);
-      font-size: $font-size-lg;
-    }
+}
+#nav {
+  @include gradient-bg(darken($primary-color-light, 5), $primary-color-dark);
+  #nav-home {
+    background-color: lighten($primary-color-dark, 1) !important;
+    font-size: $font-size-lg !important;
+  }
 
-    #nav-btnBuscar {
-      background-color: lighten($primary-color-dark, 4);
-      font-size: $font-size-base;
-    }
+  #nav-btnBuscar {
+    background-color: lighten($primary-color-dark, 4) !important;
+    font-size: $font-size-base !important;
+  }
+  #nav-btnLocalizacion {
+    @include gradient-bg(darken($primary-color, 5), $primary-color-dark);
+    font-size: $font-size-base !important;
   }
 }
+
 #div {
   @include gradient-bg($primary-color-light, $accent-color);
   @include padding-xy(4, 4);
@@ -37,6 +42,8 @@ html {
   }
 }
 ul {
+  list-style: none !important;
+
   @include gradient-bg($primary-color-light, $accent-color);
 }
 .card {

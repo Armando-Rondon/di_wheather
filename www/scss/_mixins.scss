@@ -13,8 +13,3 @@
     background: linear-gradient(90deg, $color1 0%, $color2 100%);
   }
 }
-@mixin navOculto {
-  @media screen and (max-width: 500px) {
-    visibility: hidden;
-  }
-}

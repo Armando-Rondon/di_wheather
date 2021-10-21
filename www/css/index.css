@@ -11,15 +11,20 @@ html {
   background: linear-gradient(90deg, #9ce5ee 0%, #0097a7 100%); }
   .navbar-toggle {
     background-color: #0097a7; }
-  @media screen and (max-width: 500px) {
-    .navbar #nav {
-      visibility: hidden; } }
-  .navbar #nav #nav-home {
-    background-color: #009cac;
-    font-size: 1.5rem; }
-  .navbar #nav #nav-btnBuscar {
-    background-color: #00a9bb;
-    font-size: 1.2rem; }
+
+#nav {
+  background-color: #9ce5ee;
+  background: linear-gradient(90deg, #9ce5ee 0%, #0097a7 100%); }
+  #nav #nav-home {
+    background-color: #009cac !important;
+    font-size: 1.5rem !important; }
+  #nav #nav-btnBuscar {
+    background-color: #00a9bb !important;
+    font-size: 1.2rem !important; }
+  #nav #nav-btnLocalizacion {
+    background-color: #00a5bb;
+    background: linear-gradient(90deg, #00a5bb 0%, #0097a7 100%);
+    font-size: 1.2rem !important; }
 
 #div {
   background-color: #b2ebf2;
@@ -37,6 +42,7 @@ html {
     background: linear-gradient(90deg, #757575 0%, #009688 100%); }
 
 ul {
+  list-style: none !important;
   background-color: #b2ebf2;
   background: linear-gradient(90deg, #b2ebf2 0%, #009688 100%); }
 

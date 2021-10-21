@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <title>Weather is sweet</title>
+  </head>
+  <body>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="p-4" id="nav">
+        <buttton class="btn" type="button" id="nav-home">Home</buttton>
+        <button class="btn" id="nav-btnBuscar" type="submit">Search</button>
+        <button class="btn" id="nav-btnLocalizacion" type="submit">
+          Location
+        </button>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button
+          class="btn navbar-toggler"
+          id="toggle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!--nav malo-->
+    <!--    <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <div class="container-fluid">
+            <button id="toggle" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse"  id="nav">
+                    <buttton class="btn" type="button" id="nav-home">Home</buttton>
+                     <button class="btn btn-outline-success" id="nav-btnBuscar" type="submit">Search</button>
+                     <button class="btn btn-outline-success" id="nav-btnLocalizacion" type="submit">Location</button>
+            </div>
+          </div>
+        </div>
+    </nav> -->
+
+    <!---Body-->
+    <div class="container" id="div">
+      <div class="row align-items-center" id="divDeArriba">
+        <div class="mx-auto">
+          <h1 id="h1" class="col-sm-6">Your Weather app</h1>
+          <h2 id="h2" class="col-sm-6">Know the Weather at all time</h2>
+          <input class="input" id="city" />
+          <div class="d-flex flex-column justify-content-around">
+            <button class="btn" id="buscar">Clima hoy</button>
+            <button class="btn" id="buscarMasDias">
+              Clima en los siguentes días
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card row" id="divDeAbajo"></div>
+      <ul class="list-group"></ul>
+    </div>
+    <footer class="container">
+      <div class="row row-cols-2">
+        <p>Armando Rondon</p>
+        <p>2ºDAM</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
